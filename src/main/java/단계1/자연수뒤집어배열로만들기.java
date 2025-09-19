@@ -8,11 +8,9 @@ public class 자연수뒤집어배열로만들기 {
 
         int[] answer = new int[length];
 
-        int value = Integer.parseInt(String.valueOf(n));
-
         for (int i = 0; i < length; i++) {
-            answer[i] = value % 10;
-            value /= 10;
+            answer[i] = Integer.parseInt(String.valueOf(n % 10));
+            n /= 10;
         }
 
         return answer;
